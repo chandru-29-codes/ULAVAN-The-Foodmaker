@@ -1,0 +1,14 @@
+/* Clear, touch-friendly sign-in and registration screen */
+.auth-card { box-shadow: 0 15px 40px rgba(20,55,36,.08); }
+.login-form input { font-size: 16px; padding: 14px; }
+.back-home { border: 1px solid #b9d8c3; background: transparent; color: #fff; border-radius: 8px; padding: 10px 14px; margin-top: 30px; font-weight: 700; }
+.back-link { display: none; color: var(--green); border: 0; background: none; padding: 0; margin: 0 0 20px; font-weight: 700; }
+.demo { padding: 14px; font-size: 13px; }
+.demo-buttons { display: flex; gap: 10px; flex-wrap: wrap; margin: 7px 0; }
+.demo-buttons button { background: #e1f0e5; padding: 7px 9px; border-radius: 6px; }
+@media (max-width:850px) { .back-link { display:block; } }
+
+/* The old hero illustration used .field too. Keep form controls in normal flow. */
+.form .field { position: static; left: auto; bottom: auto; width: auto; height: auto; display: grid; gap: 7px; border-radius: 0; background: transparent; }
+.form .field input, .form .field select, .form .field textarea { position: static; width: 100%; min-height: 44px; opacity: 1; pointer-events: auto; }
+.hero-field { position: absolute; bottom: -30px; left: -10%; width: 130%; height: 210px; border-radius: 50% 50% 0 0; background: repeating-radial-gradient(ellipse at center,#7fbd58 0 28px,#4b964e 30px 54px); }
